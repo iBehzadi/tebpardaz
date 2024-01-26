@@ -2,12 +2,11 @@ import { createApp } from 'vue'
 import './style.css'
 import App from './App.vue'
 import router from './router/index'
-
+import '@mdi/font/css/materialdesignicons.css'
 import 'vuetify/styles'
 import { createVuetify } from 'vuetify'
 import * as components from 'vuetify/components'
 import * as directives from 'vuetify/directives'
-import { aliases, mdi } from 'vuetify/iconsets/mdi'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
@@ -16,20 +15,11 @@ library.add(faUserSecret,faLocationDot,faEnvelope,faMobile,faBars,faHouseMedical
 
 
 const vuetify = createVuetify({
-
-  theme: {
-    defaultTheme: 'light',
-    //
+  icons: {
+    defaultSet: 'mdi', // This is already the default value - only for display purposes
   },
     components,
     directives,
-    icons: {
-      defaultSet: 'mdi',
-      aliases,
-      sets: {
-        mdi,
-      },
-    },
 
   })
   

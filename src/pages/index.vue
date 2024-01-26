@@ -6,14 +6,12 @@
     <div class="max-w-[1200px] mx-auto px-4 mt-[70px] lg:mt-24">
 
         <!-- slider -->
-        <div class="imgSlider py-6 ">
-
+        <div dir="ltr" class="imgSlider py-6 ">
             <v-carousel cycle :show-arrows="true" height="300" delimiter-icon="mdi-icon">
                 <v-carousel-item src="https://cdn.vuetifyjs.com/images/cards/docks.jpg" cover></v-carousel-item>
                 <v-carousel-item src="https://cdn.vuetifyjs.com/images/cards/hotel.jpg" cover></v-carousel-item>
                 <v-carousel-item src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg" cover></v-carousel-item>
             </v-carousel>
-
 
         </div>
 
@@ -86,6 +84,10 @@
 
 .article h2 {
     @apply relative before:content-[''] before:absolute before:bottom-0 before:w-[80px] before:h-[5px] before:bg-[#0046c0] before:rounded-md
+}
+
+.btn__overlay {
+    @apply bg-red-500
 }
 </style>
 
